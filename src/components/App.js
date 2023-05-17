@@ -84,9 +84,9 @@ const App=()=>{
         return(
             <div id="main">
                
-               <input value={FirstName} type="text" data-testid="input1" 
+               <input name="name1" value={FirstName} type="text" data-testid="input1" 
                placeholder="Enter first name" onChange={handleFirstName}/>
-               <input value={SecondName} type="text" data-testid="input2" 
+               <input name="name2" value={SecondName} type="text" data-testid="input2" 
                placeholder="Enter second name" onChange={handleSecondName}/>
                <button data-testid="calculate_relationship" onClick={calculateRelationship}>Calculate Relationship Future</button>
                <button onClick={clearInputs} data-testid="clear">Clear</button>
